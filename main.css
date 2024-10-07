@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: orange;
+}
+
+header, 
+section h2,
+section h3, 
+form button,
+footer {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+section p,
+input, 
+textarea {
+    font-family: "Great Vibes", system-ui;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+header {
+    padding: 30px 0;
+    background-color: black;
+    color: crimson;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 10px;
+    font-size: 17px;
+}
+
+header nav li a {
+    color: crimson;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.capa-site {
+    margin-right: 40px;
+    height: 400px;
+}
+
+section .container {
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+    font-size: 30px;
+}
+
+.coluna {
+    float: left;
+    width: 25%;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 500px) {
+    .column {
+        width: 100%;
+    }
+}
+
+section .container video {
+    height: 720px;
+}
+
+.noticias {
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+section .notices {
+    flex-wrap: wrap;
+}
+
+section .notices p {
+    margin-bottom: 20px;
+}
+
+.contact-methods {
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 900px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+    width: 900px;
+}
+
+form button {
+    background-color: black;
+    color: red;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+}
+
+form button:hover {
+    background-color: orangered;
+}
+
+input:focus, textarea:focus {
+    outline-color: black;
+}
+
+.contact-methods {
+    margin-left: 200px;
+}
+
+.contact-methods h2 {
+    margin-left: 350px;
+}
+
+footer {
+    background-color: black;
+    color: red;
+    padding: 16px 0;
+    height: 100px;
+}
+
+footer p {
+    margin-left: 650px;
+}
